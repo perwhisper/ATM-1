@@ -37,7 +37,7 @@ int  B=0;
 //随机生成银行卡号
 void getMoney(){
     FILE *file;
-    file= fopen("/home/fg/C_projecy/CProject/银行金钱存储柜.txt","r");
+    file= fopen("银行金钱存储柜.txt","r");
     if(file==NULL){
         printf("存储柜打不开\n");
     }
@@ -51,7 +51,7 @@ void getMoney(){
 // 把每次操作完之后的钱再一次写入文件
 void PutMoney(){
     FILE *file;
-    file= fopen("/home/fg/C_projecy/CProject/银行金钱存储柜.txt","w");
+    file= fopen("银行金钱存储柜.txt","w");
     if(file==NULL){
         printf("存储柜打不开\n");
     }
@@ -101,7 +101,7 @@ struct users *readuser(struct users *u)
     struct users *r=NULL,*p=NULL;
     FILE *fp;//定义文件指针
     p=u=(struct users *)malloc(sizeof(struct users));
-    if ((fp = fopen("/home/fg/C_projecy/CProject/userinformation.txt", "r")) == NULL)
+    if ((fp = fopen("userinformation.txt", "r")) == NULL)
         printf("ATM管理系统文件不存在 \n");
     else
     {
@@ -125,7 +125,7 @@ void saveusers(struct users *u)
     struct users *r=NULL;
     FILE *fp;
     r=u->next;
-    fp=fopen("/home/fg/C_projecy/CProject/userinformation.txt","w+");
+    fp=fopen("userinformation.txt","w+");
     fputs(title,fp);
     while(r!=NULL)
     {
@@ -726,7 +726,8 @@ struct users* changPassword(struct users*head){
 struct Administrator *readManager(Adm *head){
     Adm *p=NULL,*pr=head;//pr用于遍历链表
     FILE *file;  //文件指针
-    file= fopen("/home/fg/C_projecy/CProject/bank.txt","r");
+    file= fopen("
+        bank.txt","r");
     if(file==NULL){
         printf("bank文件打开失败\n");
     }
