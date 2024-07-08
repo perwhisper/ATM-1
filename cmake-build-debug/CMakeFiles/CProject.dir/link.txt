@@ -1,1 +1,0 @@
-/usr/bin/c++ -g CMakeFiles/CProject.dir/main.cpp.o "CMakeFiles/CProject.dir/main_(1).c.o" CMakeFiles/CProject.dir/2.0.cpp.o -o CProject 
