@@ -35,4 +35,3 @@
 
 
 - 邮箱：callahanjuniper8@gmail.com
-- QQ：1245418315
